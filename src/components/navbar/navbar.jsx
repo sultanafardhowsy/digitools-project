@@ -3,7 +3,7 @@ import { BiCart } from "react-icons/bi";
 
 const Navbar = () => {
     return (
-   <div className="navbar bg-base-100 shadow-sm mx-auto flex flex-row justify-between px-40">
+   <div className="navbar bg-base-100 shadow-sm mx-auto flex flex-row justify-between w-11/12">
   <div className="">
     <a className="btn btn-ghost text-2xl font-bold text-[#4F39F6]">DigiTools</a>
   </div>
