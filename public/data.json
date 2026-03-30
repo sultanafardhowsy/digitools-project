@@ -1,0 +1,107 @@
+[
+{
+    "id": "dt001",
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "AI-powered content generation",
+      "50+ writing templates",
+      "Grammar & tone correction",
+      "SEO optimization tools"
+    ],
+    "icon": "https://i.ibb.co.com/tM7H27mR/writing-2327400-1.png"
+  },
+
+  {
+    "id": "dt009",
+    "name": "ResumePro Builder",
+    "description": "Create professional, ATS-friendly resumes in minutes with customizable templates.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF", "Real-time preview"],
+    "icon": "https://i.ibb.co.com/zHWrP7dv/portfolio.png"
+  },
+  {
+    "id": "dt002",
+    "name": "TaskFlow Manager",
+    "description": "Organize tasks, track progress, and boost productivity with smart workflows.",
+    "price": 5.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Kanban boards", "Team collaboration", "Deadline reminders", "Mobile sync"],
+    "icon": "https://i.ibb.co.com/Fkk1gF1J/operation.png"
+  },
+  {
+    "id": "dt003",
+    "name": "DesignKit Studio",
+    "description": "An all-in-one graphic design tool for social media, ads, and branding.",
+    "price": 49.99,
+    "period": "yearly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["5000+ assets", "Drag-and-drop editor", "Brand kits", "Export in multiple formats"],
+    "icon": "https://i.ibb.co.com/jvJ4L60y/design-tool.png"
+  },
+  {
+    "id": "dt004",
+    "name": "CodeAssist AI",
+    "description": "AI-powered coding assistant to write, debug, and optimize code faster.",
+    "price": 19.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Multi-language support", "Auto-complete", "Bug detection", "Code explanations"],
+    "icon": "https://i.ibb.co.com/ZzyRNLHy/aipro.jpg"
+  },
+  {
+    "id": "dt005",
+    "name": "FinanceTracker Pro",
+    "description": "Track expenses, manage budgets, and gain insights into your finances.",
+    "price": 29.99,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["Expense categorization", "Budget planning", "Reports & analytics", "Cloud sync"],
+    "icon": "https://i.ibb.co.com/p6GJ98zV/nick-chong-N-Bnv-Q-w18-unsplash.jpg"
+  },
+  {
+    "id": "dt006",
+    "name": "SEO Booster Tool",
+    "description": "Improve your website ranking with advanced SEO analysis and suggestions.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Keyword research", "Site audit", "Backlink tracking", "Competitor analysis"],
+    "icon": "https://i.ibb.co.com/8gfPhn6F/geralt-search-engine-optimization-586422-1920.jpg"
+  },
+  {
+    "id": "dt007",
+    "name": "CourseCraft LMS",
+    "description": "Build and sell online courses with an easy-to-use learning management system.",
+    "price": 99.0,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["Video hosting", "Quizzes & assignments", "Student analytics", "Payment integration"],
+    "icon": "https://i.ibb.co.com/LXkNkTZ5/social-media.png"
+  },
+  {
+    "id": "dt008",
+    "name": "CloudNote App",
+    "description": "Capture ideas, notes, and to-dos seamlessly across all your devices.",
+    "price": 3.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Rich text editor", "Cross-device sync", "Offline mode", "Tag organization"],
+    "icon": "https://i.ibb.co.com/C3PJbvnq/4957531-200.png"
+  }
+]
