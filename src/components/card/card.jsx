@@ -1,6 +1,7 @@
 import React, { use } from 'react';
 import CardDetails from './cardDetails';
 
+
 const Card = ({DataPromise}) => {
    
     const datas = use(DataPromise);
@@ -13,6 +14,7 @@ const Card = ({DataPromise}) => {
                 key={index}
                 data={data}></CardDetails>)
             }
+           
          </div>
     )
 }

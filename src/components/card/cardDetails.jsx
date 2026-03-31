@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Features from './features';
 
 const CardDetails = ({data}) => {
+  const [selectedType, setSelectedType] = useState(false);
     return (
        
                 
@@ -45,7 +46,7 @@ const CardDetails = ({data}) => {
             }
 
    
-    <button className="w-full py-3 rounded-full text-white font-medium 
+    <button onClick={() =>setSelectedType(true)} className="w-full py-3 rounded-full text-white font-medium 
                   bg-linear-to-r from-blue-600 to-purple-600
                    hover:opacity-90 transition mt-4">
       Buy Now
