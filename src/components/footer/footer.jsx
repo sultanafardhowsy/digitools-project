@@ -1,4 +1,7 @@
 import React from 'react';
+import instra from '../../assets/products/instagram.png'
+import facebook from '../../assets/products/facebook.png'
+import x from '../../assets/products/x.png'
 
 const Footer = () => {
     return (
@@ -10,7 +13,7 @@ const Footer = () => {
         <div className="md:col-span-2">
           <h3 className="text-white text-xl font-semibold mb-3">DigiTools</h3>
           <p className="text-sm opacity-80">
-            Premium digital tools for creators, professionals, and businesses.
+            Premium digital tools for creators,<br/> professionals, and businesses.<br/>
             Work smarter with our suite of powerful tools.
           </p>
         </div>
@@ -45,8 +48,13 @@ const Footer = () => {
             <li>Contact</li>
           </ul>
         </div>
-        <div>
+        <div className='flex flex-col'>
         <p>Social Links</p>
+        <div className='flex flex-row'>
+           <img className='bg-slate-200 rounded-full py-3 px-3 mt-3 ' src={instra} alt="" />
+            <img className='bg-slate-200 rounded-full py-3 px-3 mt-3 ' src={facebook} alt="" />
+             <img className='bg-slate-200 rounded-full py-3 px-3 mt-3 ' src={x} alt="" />
+        </div>
       </div>
       </div>
 

@@ -4,13 +4,13 @@ import { useState } from 'react'
 import './App.css'
 import Banner from './components/banner/banner'
 import Card from './components/card/card'
-import Navbar from './components/navbar/navbar'
 import Premium from './components/premium/premium'
 import Rating from './components/rating/rating'
 import StepSection from './components/stepSection/stepSection'
 import Pricing from './components/pricing/pricing'
 import Workflow from './components/workflow/workflow'
 import Footer from './components/footer/footer'
+import NavBarResponsive from './components/navbar/navbarresponsive'
 
 const fetchData = async() =>{
   const res = await fetch('/data.json');
@@ -29,7 +29,8 @@ function App() {
 
   return (
     <>
-    <Navbar cartValue={cartValue}></Navbar>
+   
+    <NavBarResponsive></NavBarResponsive>
     <Banner></Banner>
     <Rating></Rating>
     <Premium DataPromise={DataPromise} cartValue={cartValue} setCartValue={setCartValue}></Premium>

@@ -1,6 +1,7 @@
 import React from 'react';
 import BannerImage from '../../assets/banner.png'
 import play from '../../assets/play.png'
+import { toast } from 'react-toastify';
 
 
 const Banner = () => {
@@ -18,8 +19,8 @@ const Banner = () => {
             <p>Access premium AI tools, design assets, templates, and productivity<br/>
                software—all in one place. Start creating faster today.<br/>Explore Products</p>
                <div className='mt-5'>
-                <button className="btn btn-primary rounded-4xl bg-linear-to-r from-blue-600 to-purple-600 mr-5">Explore Products</button>
-                <button className="btn btn-neutral btn-outline rounded-4xl text-blue-600 border-blue-600"><img src={play}></img> Watch Demo</button>
+                <button onClick={()=>toast("Explore our products")} className="btn btn-primary rounded-4xl bg-linear-to-r from-blue-600 to-purple-600 mr-5">Explore Products</button>
+                <button onClick={()=>toast("Watch demo of products")} className="btn btn-neutral btn-outline rounded-4xl text-blue-600 border-blue-600"><img src={play}></img> Watch Demo</button>
                </div>
             </div>  
           <div><img src={BannerImage} alt="" /></div>

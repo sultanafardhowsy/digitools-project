@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Features from './features';
 import CartItem from '../cartItem/CartItem';
+import { toast } from 'react-toastify';
 
 const CardDetails = ({data,selectedCart,setSelectedCart,setCartValue, cartValue}) => {
   const [selectedType, setSelectedType] = useState(false);
@@ -69,7 +70,8 @@ const handleCartValue =() => {
 <button
   onClick={() => {
     setSelectedType(true); 
-    handleCartValue();     
+    handleCartValue(); 
+    toast("Product selected")    
   }}
   className={`w-full py-3 rounded-full text-white font-medium transition mt-4
     ${selectedType

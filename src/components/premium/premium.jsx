@@ -2,6 +2,7 @@ import React, { Suspense } from 'react';
 import { useState } from 'react';
 import Card from '../card/card';
 import CartItem from '../cartItem/CartItem';
+import { toast } from 'react-toastify';
 
 
 
@@ -18,7 +19,7 @@ const Premium = ({DataPromise,cartValue,setCartValue}) => {
           to boost your productivity and creativity.</p>
           <div className='mb-10'>
             <button onClick={() =>setSelectedType("products")} className={`btn ${selectedType === "products" ? "bg-linear-to-r from-blue-600 to-purple-600" :""} rounded-4xl mr-5`}>Products</button>
-            <button onClick={() =>setSelectedType("cart")} className={`btn ${selectedType === "cart" ? "bg-linear-to-r from-blue-600 to-purple-600" :""} border-t-neutral-50 rounded-4xl`}>Cart ({selectedCart.length})</button>
+            <button onClick={() =>{setSelectedType("cart"); toast("Cart item selected")}} className={`btn ${selectedType === "cart" ? "bg-linear-to-r from-blue-600 to-purple-600" :""} border-t-neutral-50 rounded-4xl`}>Cart ({selectedCart.length})</button>
           </div>
           {
             selectedType === "products" ? 

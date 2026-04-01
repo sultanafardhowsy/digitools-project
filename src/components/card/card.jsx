@@ -2,6 +2,7 @@ import React, { use } from 'react';
 import CardDetails from './cardDetails';
 
 
+
 const Card = ({DataPromise,cartValue,setCartValue,selectedCart,setSelectedCart}) => {
    
     const datas = use(DataPromise);
@@ -12,7 +13,9 @@ const Card = ({DataPromise,cartValue,setCartValue,selectedCart,setSelectedCart})
             {
                 datas.map((data,index) =><CardDetails
                 key={index}
-                data={data} cartValue={cartValue} setCartValue={setCartValue} selectedCart={selectedCart} setSelectedCart={setSelectedCart}></CardDetails>)
+                data={data} cartValue={cartValue} setCartValue={setCartValue} selectedCart={selectedCart} setSelectedCart={setSelectedCart}></CardDetails>
+              )
+               
             }
            
          </div>

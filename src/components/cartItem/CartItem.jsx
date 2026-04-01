@@ -1,11 +1,26 @@
 import React from 'react';
 import BannerImage from '../../assets/products/shopping-cart.png'
 import CardDetails from '../card/cardDetails';
+import { toast } from 'react-toastify';
 
 
 const CartItem = ({selectedCart,setSelectedCart}) => {
     console.log(selectedCart);
-    
+
+    const handleDeletedItem = (data) => {
+  const filteredItem = selectedCart.filter(
+    (cartItem) => cartItem.name != data.name
+  );
+
+  setSelectedCart(filteredItem);
+};
+const total = selectedCart.reduce(
+    (sum, item) => sum + item.price,
+    0
+  );
+  const checkOut = () =>{
+    setSelectedCart([]);
+  }    
     return (
         <div className='w-300 h-auto mt-10'>
           
@@ -34,13 +49,24 @@ const CartItem = ({selectedCart,setSelectedCart}) => {
                 <p>${data.price}</p>
               </div>
              </div>
-             <div className='text-red-700 items-center'><button>Remove</button></div>
+             <div className='text-red-700 items-center'><button onClick={() =>handleDeletedItem(data)}>Remove</button></div>
+            
              </div>
             );
           })
         )}
       </div>
-
+      <div className='flex justify-between text-xl mt-5'>
+        <h3>Total:</h3>
+          <h3> ${total}</h3>
+      </div>
+      
+      <button onClick={() => {
+    checkOut();  toast("Checkout successful ");  
+  }} className='bg-linear-to-r from-blue-600 to-purple-600 w-full h-10 text-white border-none rounded-4xl px-4 mt-5'>
+       
+        Proceed to Checkout
+      </button>
 
         </div>
     );
