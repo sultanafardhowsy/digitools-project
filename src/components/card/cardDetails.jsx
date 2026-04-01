@@ -15,7 +15,6 @@ const tagStyles = {
 const handleCartValue =() => {
     
     cartValue=selectedCart.length;
- console.log(selectedCart);
  setSelectedCart([...selectedCart,data])
           }
         
