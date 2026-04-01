@@ -1,4 +1,5 @@
-import { Suspense } from 'react'
+
+
 import { useState } from 'react'
 import './App.css'
 import Banner from './components/banner/banner'
@@ -7,6 +8,7 @@ import Navbar from './components/navbar/navbar'
 import Premium from './components/premium/premium'
 import Rating from './components/rating/rating'
 import StepSection from './components/stepSection/stepSection'
+import Pricing from './components/pricing/pricing'
 
 const fetchData = async() =>{
   const res = await fetch('/data.json');
@@ -18,18 +20,18 @@ const fetchData = async() =>{
 
 function App() {
   const DataPromise =fetchData();
-  
-  
+  const [cartValue, setCartValue] = useState(0)  
 
   return (
     <>
-    <Navbar></Navbar>
+    <Navbar cartValue={cartValue}></Navbar>
     <Banner></Banner>
     <Rating></Rating>
-    <Premium DataPromise={DataPromise}></Premium>
+    <Premium DataPromise={DataPromise} cartValue={cartValue} setCartValue={setCartValue}></Premium>
      {/* <Card DataPromise={DataPromise}></Card> */}
    
 <StepSection></StepSection>
+<Pricing></Pricing>
 
     </>
 
