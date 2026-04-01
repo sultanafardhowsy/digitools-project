@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Features from './features';
 import CartItem from '../cartItem/CartItem';
 
-const CardDetails = ({data,cartValue,setCartValue,selectedCart,setSelectedCart}) => {
+const CardDetails = ({data,selectedCart,setSelectedCart,setCartValue, cartValue}) => {
   const [selectedType, setSelectedType] = useState(false);
 
 const tagStyles = {
@@ -12,10 +12,12 @@ const tagStyles = {
 };
 
 const handleCartValue =() => {
-    setCartValue(selectedCart.length);
+    
+    cartValue=selectedCart.length;
  console.log(selectedCart);
  setSelectedCart([...selectedCart,data])
           }
+        
 
     return (
        

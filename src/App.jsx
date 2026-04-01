@@ -9,6 +9,8 @@ import Premium from './components/premium/premium'
 import Rating from './components/rating/rating'
 import StepSection from './components/stepSection/stepSection'
 import Pricing from './components/pricing/pricing'
+import Workflow from './components/workflow/workflow'
+import Footer from './components/footer/footer'
 
 const fetchData = async() =>{
   const res = await fetch('/data.json');
@@ -20,7 +22,10 @@ const fetchData = async() =>{
 
 function App() {
   const DataPromise =fetchData();
-  const [cartValue, setCartValue] = useState(0)  
+   const [cartValue, setCartValue] = useState();
+   console.log(cartValue);
+   
+  
 
   return (
     <>
@@ -32,7 +37,8 @@ function App() {
    
 <StepSection></StepSection>
 <Pricing></Pricing>
-
+<Workflow></Workflow>
+<Footer></Footer>
     </>
 
   )

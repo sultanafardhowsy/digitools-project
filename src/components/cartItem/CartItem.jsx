@@ -7,7 +7,7 @@ const CartItem = ({selectedCart,setSelectedCart}) => {
     console.log(selectedCart);
     
     return (
-        <div className='w-300 h-50 mt-10'>
+        <div className='w-300 h-auto mt-10'>
           
              <p className='font-bold text-3xl'>Your cart</p> 
          
@@ -22,18 +22,20 @@ const CartItem = ({selectedCart,setSelectedCart}) => {
           selectedCart.map((data) => {
             return (
              
-             <div key={data.id} className='flex flex-col-2 gap-4'>
+             <div className='flex justify-between bg-amber-50 rounded-2xl'>
+              <div key={data.id} className='flex flex-col-2 gap-4'>
              <div>
-              <img
+              <img className='h-7 w-7'
               src={data.icon}
-              alt="Shoes" />
+              alt="" />
              </div>
               <div>
                 <p>{data.name}</p>
                 <p>${data.price}</p>
               </div>
              </div>
-
+             <div className='text-red-700 items-center'><button>Remove</button></div>
+             </div>
             );
           })
         )}
