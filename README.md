@@ -3,6 +3,8 @@
 ## 🔗 Live Link  
 👉 [unique-yeot-56cc17.netlify.app](https://unique-yeot-56cc17.netlify.app)
 
+---
+
 ## 📌 Project Overview
 
 **DigiTools** is a modern and responsive web application built with React.js that provides digital tools and product management features. It offers a smooth user experience with dynamic UI, interactive components, and real-time notifications.
@@ -26,43 +28,22 @@ DigiTools is designed to showcase products, manage cart functionality, and provi
 
 ---
 
-## ✨ Key Features
+## 📦 Dependencies
 
-### 🛒 1. Dynamic Cart System
+Make sure you have the following installed:
 
-* Add/remove items from cart
-* Real-time cart update
-* Cart item counter
+- Node.js (v14 or higher)
+- npm or yarn
 
-### 🔔 2. Toast Notifications
+### Project Dependencies:
 
-* Instant feedback using React-Toastify
-* Success, warning, and error alerts
-* Improved user interaction
+- react  
+- react-dom  
+- tailwindcss  
+- daisyui  
+- react-toastify  
 
-### 📱 3. Fully Responsive Design
+Install all dependencies using:
 
-* Mobile-friendly navigation
-* Smooth responsive layout
-* Modern UI with Tailwind + DaisyUI
-
----
-
-## 🎯 Future Improvements
-
-* User authentication system
-* Backend integration (API)
-* Payment gateway integration
-
-
----
-
-## 🧑‍💻 Author
-
-**Sultana Fardhowsy**
-
----
-
-## ⭐ Support
-
-If you like this project, give it a ⭐ on GitHub!
+```bash
+npm install
