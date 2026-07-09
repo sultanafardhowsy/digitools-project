@@ -44,6 +44,7 @@ Make sure you have the following installed:
 - react-toastify  
 Clone repository
 git clone https://github.com/sultanafardhowsy/digitools-project.git
+
 Install all dependencies using:
 
 ```bash
