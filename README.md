@@ -42,7 +42,8 @@ Make sure you have the following installed:
 - tailwindcss  
 - daisyui  
 - react-toastify  
-
+Clone repository
+git clone https://github.com/sultanafardhowsy/digitools-project.git
 Install all dependencies using:
 
 ```bash
