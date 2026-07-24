@@ -9,9 +9,9 @@ const NavigationData = [
   { id: 5, name: "FAQ", path: "/faq" },
 ];
 
-const NavBarResponsive = () => {
+const NavBarResponsive = ({cartValue,setCartValue}) => {
   const [open, setOpen] = useState(false);
-
+console.log(cartValue);
   return (
     <nav className="flex justify-between items-center w-full px-15 py-4 border-b relative">
 
@@ -60,11 +60,13 @@ const NavBarResponsive = () => {
 
         
         <div className="flex flex-col items-center gap-4 pb-6">
+          
           <ShoppingCart />
-          <button>Login</button>
-          <button className="bg-blue-500 text-white px-4 py-2 rounded-full">
-            Get Started
-          </button>
+          <button className='font-bold'>Login with</button>
+    <button className="btn bg-blue-600 text-white rounded-3xl">
+     Get Started with {cartValue}
+    </button>
+          <p>cart</p>
         </div>
       </div>
 

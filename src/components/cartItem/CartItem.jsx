@@ -22,9 +22,9 @@ const total = selectedCart.reduce(
     setSelectedCart([]);
   }    
     return (
-        <div className='w-300 h-auto mt-10'>
+        <div className='w-full max-w-2xl mx-auto mt-10 px-4'>
           
-             <p className='font-bold text-3xl'>Your cart</p> 
+             <p className='font-bold text-2xl sm:text-3xl'>Your cart</p> 
          
 
 <div className="space-y-5">
@@ -37,19 +37,19 @@ const total = selectedCart.reduce(
           selectedCart.map((data) => {
             return (
              
-             <div className='flex justify-between bg-amber-50 rounded-2xl'>
-              <div key={data.id} className='flex flex-col-2 gap-4'>
+             <div className='flex flex-col sm:flex-row justify-between items-start sm:items-center bg-amber-50 rounded-2xl p-4 gap-3'>
+              <div key={data.id} className='flex items-center gap-4'>
              <div>
               <img className='h-7 w-7'
               src={data.icon}
               alt="" />
              </div>
               <div>
-                <p>{data.name}</p>
+                <p className='font-medium'>{data.name}</p>
                 <p>${data.price}</p>
               </div>
              </div>
-             <div className='text-red-700 items-center'><button onClick={() =>handleDeletedItem(data)}>Remove</button></div>
+             <div className='text-red-700'><button onClick={() =>handleDeletedItem(data)}>Remove</button></div>
             
              </div>
             );
@@ -73,5 +73,3 @@ const total = selectedCart.reduce(
 };
 
 export default CartItem;
-
-

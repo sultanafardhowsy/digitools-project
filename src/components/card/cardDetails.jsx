@@ -3,9 +3,9 @@ import Features from './features';
 import CartItem from '../cartItem/CartItem';
 import { toast } from 'react-toastify';
 
-const CardDetails = ({data,selectedCart,setSelectedCart,setCartValue, cartValue}) => {
+const CardDetails = ({data,selectedCart,setSelectedCart}) => {
   const [selectedType, setSelectedType] = useState(false);
-
+ 
 const tagStyles = {
   "Best Seller": "bg-yellow-100 text-yellow-700",
   "New": "bg-green-100 text-green-700",
@@ -14,7 +14,8 @@ const tagStyles = {
 
 const handleCartValue =() => {
     
-    cartValue=selectedCart.length;
+  
+    // cartValue=selectedCart.length;
  setSelectedCart([...selectedCart,data])
           }
         
@@ -22,7 +23,7 @@ const handleCartValue =() => {
     return (
        
                 
-            <div className="bg-white rounded-2xl shadow-md p-6 w-80 border border-gray-200 relative">
+            <div className="bg-white rounded-2xl shadow-md p-6 w-full border border-gray-200 relative">
 
   
     <span
@@ -52,7 +53,7 @@ const handleCartValue =() => {
       {data.description}
     </p>
 
-   
+    
     <div className="mb-4">
       <span className="text-3xl font-bold text-gray-900">${data.price}</span>
       <span className="text-gray-500 text-sm">/Mo</span>
